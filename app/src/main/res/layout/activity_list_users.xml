@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListUsersActivity">
+    android:paddingHorizontal="@dimen/padding_normal"
+    tools:context=".ui.users.ListUsersActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_list_users"
         android:layout_width="@dimen/nol_dp"
         android:layout_height="@dimen/nol_dp"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_list_user"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
